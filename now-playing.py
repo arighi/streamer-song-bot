@@ -37,7 +37,7 @@ def main():
                 text = 'Now playing: "<i>%s - %s</i>" requested by <b>%s</b>' % \
                        (song["title"], song["artist"], user)
         except:
-            text = "No song is being played (just chatting...)"
+            text = "No song is being played (just chatting/practicing...)"
         with open(CWD + '.index.html', 'w') as fd:
             fd.write(template % text)
         os.rename(CWD + '.index.html', CWD + 'index.html')
